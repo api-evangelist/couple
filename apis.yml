@@ -1,7 +1,23 @@
 aid: couple
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/couple.png
 name: couple
-description: couple is a company surfaced as a portfolio company of slow-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'couple (couple.me) is an AI companion chat platform operated by Fab AI LTD and backed
+  by Slow Ventures. The consumer-facing product lets users create and customize an AI girlfriend,
+  boyfriend, or anime character, then hold personalized text conversations and request AI-generated
+  images from that companion. It offers a free tier with an optional premium subscription. It is a
+  consumer app with no public developer portal, API, SDKs, or documentation surface as of this
+  enrichment pass; this profile captures the company identity and the domain-security posture only.'
 url: https://raw.githubusercontent.com/api-evangelist/couple/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Artificial Intelligence
+- AI Companion
+- Chatbot
+- Conversational AI
+- Consumer
+- Entertainment
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +43,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/couple-domain-security.yml
 - type: Website
   url: https://couple.me
+- type: PrivacyPolicy
+  url: https://couple.me/privacy-policy
+- type: TermsOfService
+  url: https://couple.me/terms-of-service
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
